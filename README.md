@@ -10,10 +10,11 @@ Seamless Visualization: Integrated with OpenCV and Matplotlib for clear image pr
 
 ## 🛠️ Requirements
 The project requires the following Python libraries:
--ultralytics
--opencv-python
--matplotlib
-numpy
 
-## Detection Result
+- ultralytics
+- opencv-python
+- matplotlib
+- numpy
+
+## 📷 Detection Result
 ![Detection Result](download.png)
