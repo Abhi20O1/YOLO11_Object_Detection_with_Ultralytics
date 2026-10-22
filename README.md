@@ -1,20 +1,23 @@
-# YOLO11_Object_Detection_with_Ultralytics
-This project demonstrates real-time object detection using the YOLO11 (You Only Look Once) architecture. It utilizes the ultralytics framework to identify and locate 80 different object categories within images.
+# YOLO11 Object Detection with Ultralytics
 
-## 🚀 Features
-State-of-the-Art Model: Uses the high-accuracy yolo11x.pt (Extra Large) pre-trained model.
+A notebook-based object-detection experiment using YOLO11 and the Ultralytics framework to locate common objects in images.
 
-Broad Detection Range: Capable of detecting 80 different classes, including people, vehicles, animals, and common household items.
+## Features
 
-Seamless Visualization: Integrated with OpenCV and Matplotlib for clear image processing and display.
+- Uses a pretrained YOLO11 model
+- Detects the standard COCO object categories supported by the model
+- Visualizes detections with OpenCV and Matplotlib
+- Includes an example output image in `download.png`
 
-## 🛠️ Requirements
-The project requires the following Python libraries:
+## Setup
 
-- ultralytics
-- opencv-python
-- matplotlib
-- numpy
+```bash
+pip install ultralytics opencv-python matplotlib numpy jupyter
+jupyter notebook
+```
 
-## 📷 Detection Result
-![Detection Result](download.png)
+Open `Object_Detection.ipynb`, update the input image path if needed, and run the cells in order. Model weights are downloaded by Ultralytics when requested.
+
+## Responsible use
+
+Detection results vary with image quality, viewpoint, and domain shift. Validate the model on representative data before using it in an application.
